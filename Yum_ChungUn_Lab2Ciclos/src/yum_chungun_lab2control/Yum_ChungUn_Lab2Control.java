@@ -18,8 +18,8 @@ public class Yum_ChungUn_Lab2Control {
         String usuarioCadena;
         char caractermasUsado; 
         int usuarioOpcion, cantidadRepetidas;
-        double nota1,nota2,nota3,nota4,notasSuma,promedio;
-        String promediodecimal;
+        double nota1,nota2,nota3,nota4,notasSuma,promedio,notaMax, notaMin;
+        String promediodecimal,notaMaxdecimal, notaMindecimal;
         
         System.out.println("Digite el numero del ejercicio que desea ver: \n1.Cadena\n2.Notas\n3.Clases");
         usuarioOpcion= entrada.nextInt();
@@ -64,6 +64,15 @@ public class Yum_ChungUn_Lab2Control {
                 
                 System.out.println("El promeido de sus notas es: " + promediodecimal + "%");
                 
+                notaMax = Math.max(nota1, Math.max(nota2, Math.max(nota3, nota4)));
+                notaMaxdecimal= String.format("%.2f", notaMax);
+                notaMin = Math.min(nota1,Math.min(nota2, Math.min(nota3, nota4)));
+                notaMindecimal = String.format("%.2f", notaMin);
+                
+                System.out.println("La nota maxima es: " + notaMaxdecimal + "%");
+                System.out.println("La nota minima es: " + notaMindecimal + "%");
+                
+               
                 
                 }
                 
