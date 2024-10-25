@@ -16,8 +16,8 @@ public class Yum_ChungUn_Lab2Control {
     public static void main(String[] args) {
         Scanner entrada = new Scanner(System.in);
         String usuarioCadena;
-        char caractermasUsado; 
-        int usuarioOpcion, cantidadRepetidas, usuarionumeroCadena;
+        char caracter; 
+        int usuarioOpcion, cantidadRepetidas, usuarionumeroCadena, conteocaracter=0;
         double nota1,nota2,nota3,nota4,notasSuma,promedio,notaMax, notaMin;
         String promediodecimal,notaMaxdecimal, notaMindecimal;
         
@@ -30,7 +30,20 @@ public class Yum_ChungUn_Lab2Control {
                 System.out.println("Ingrese una cadena de texto:");
                 usuarioCadena = entrada.nextLine();
                 usuarionumeroCadena = usuarioCadena.length();
-                System.out.println(usuarionumeroCadena);
+                
+                while(conteocaracter<usuarionumeroCadena){
+                
+                    
+                caracter = usuarioCadena.charAt(conteocaracter);
+                conteocaracter++; //para separar los caracteres
+                
+                
+                }    
+                
+                
+                
+                
+                
              
                 break;
             case 2: 
