@@ -32,14 +32,12 @@ public class Yum_ChungUn_Lab2Control {
                 usuarionumeroCadena = usuarioCadena.length();
                 
                 while(conteocaracter<usuarionumeroCadena){
-                
-                    
                 caracter = usuarioCadena.charAt(conteocaracter);
-                conteocaracter++; //para separar los caracteres
+                conteocaracter++; 
+                        
                 
-                
-                }    
-                
+                        
+                }
                 
                 
                 
