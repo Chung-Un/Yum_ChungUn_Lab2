@@ -17,21 +17,22 @@ public class Yum_ChungUn_Lab2Control {
         Scanner entrada = new Scanner(System.in);
         String usuarioCadena;
         char caractermasUsado; 
-        int usuarioOpcion, cantidadRepetidas;
+        int usuarioOpcion, cantidadRepetidas, usuarionumeroCadena;
         double nota1,nota2,nota3,nota4,notasSuma,promedio,notaMax, notaMin;
         String promediodecimal,notaMaxdecimal, notaMindecimal;
         
         System.out.println("Digite el numero del ejercicio que desea ver: \n1.Cadena\n2.Notas\n3.Clases");
         usuarioOpcion= entrada.nextInt();
+        entrada.nextLine();
         
         switch(usuarioOpcion){
             case 1:
                 System.out.println("Ingrese una cadena de texto:");
                 usuarioCadena = entrada.nextLine();
-                
-                System.out.println (usuarioCadena.length());
-            
-                
+                usuarionumeroCadena = usuarioCadena.length();
+                System.out.println(usuarionumeroCadena);
+             
+                break;
             case 2: 
                 
                 System.out.println("Ingrese la nota numero 1: ");
